@@ -1,22 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Tạo hiệu ứng bắn pháo hoa bằng HTML5 và Javascript</title>
-<link rel="icon" href="https://anonyviet.com/resource/phaohoa2/favicon.ico" type="image/x-ico"/>
-
-<link href="public/css/main_2.css" rel="stylesheet" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="public/css/main_2.css">
 </head>
+<style>
+  .bg-form{
+    position: relative;
+    background-image: url(public/images/bg_virgo.jpg);
+    width: 100%;
+    height: 99vh;
+  }
+  .button {
+      background-color: #a9dadf;
+      border: none;
+      color: #083331;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+</style>
 <body>
-
-<div id="info">
-  <a href="">
-    <img src="public/images/0.gif" alt="" title="" class="img-main"/>
-  </a>
-</div>
-
-<canvas id="canvas">Canvas không hổ trợ trình duyệt của bạn.</canvas>
-<script type="text/javascript" src="public/js/main_2.js"> </script>
+  <audio id="myAudio">
+    <source src="public/1.mp3" type="audio/mpeg">
+  </audio>
+  <div class="bg-form">
+    <div class="snow-canvas"></div>
+    <div class="STARDUST2">
+      <!-- <i class="em em-balloon" aria-role="presentation" aria-label="BALLOON"></i> -->
+      <img src="public/images/4.jpg" alt="" class="gifanh">
+      <a href="#" type="button" class="button" class="guiem">Đía Trinh - 29.09</a>
+      <img src="public/images/5.jpg" alt="" class="gifanh">
+      <!-- <i class="em em-balloon flip-horizontal" aria-role="presentation" aria-label="BALLOON"></i> -->
+    </div>
+      <div class="background-img">
+        <div class="guiem"></div>
+        <div class="note">
+            <img src="public/images/anhkhungloichuc.png" alt="">
+            <div class="text-name"> 👑 Đía Trinh  - 29.09 👑</div>
+            <div class="text-loichuc"> Gửi người chị yêu dấu... </div>
+            <p class="text-1">- Chúc chị sinh nhật vui vẻ !</p>
+            <p class="text-2">- Mong chị vui vẻ mỗi ngày !</p>
+            <p class="text-3">- Mong chị mạnh khỏe dồi dào !</p>
+            <p class="text-4">- Mong mọi đều tốt đẹp sẽ đến !</p>
+            <p class="text-5">- Mong mỗi ước nguyện của chị sẽ sớm được hoàn thành !</p>
+            <p class="text-6">- Tuổi mới thì phải thật giàu lên đó !</p>
+          </div>
+        </div>
+        <div class="avt-box">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="profile_avt">
+            <a href="">
+              <img src="public/images/1trinh.jpg" alt="" title="" class="img-main"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button onclick="enableAutoplay()" class="btn-click">Nhấn vào đi</button>
+  </div>
+  <script src="public/js/main_2.js"></script>
+  <script>
+    var x = document.getElementById("myAudio");
+    
+    function enableAutoplay() { 
+      x.autoplay = true;
+      x.load();
+    }
+    </script> 
+  <!-- <script src="public/js/particle.js"></script> -->
 </body>
 </html>

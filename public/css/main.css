@@ -55,7 +55,7 @@ canvas {
 }
 /* button move*/
 @keyframes move {
-  0%    { opacity: 0; left: 0; top: 10%; display: none;}
+  0%    { opacity: 0; left: 0; top: 10%; display: none; } 
 
   20%   { opacity: 0.2; left: 0; top: 90%; display: block;}
 
@@ -65,4 +65,7 @@ canvas {
 
   100%  { opacity: 1; left: 45%; top: 90%; display: block;}
 
+}
+.gifanh{
+  width: 5%;
 }
