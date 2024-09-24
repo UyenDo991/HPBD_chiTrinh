@@ -301,3 +301,139 @@ img {
   width: 100px;
   height: 100px;
 }
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  .avt-box{
+    top: 30%;
+    left: 15%;
+    display: block;
+    padding:1px;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    z-index:9;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 4px solid #2a3cad;
+    color: white;
+    /* padding: 20px; */
+  }
+  /* button */
+  .btn-click{
+    z-index: 9;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    background: rgb(255, 224, 224);
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 5px;
+    border: rgb(255, 224, 224) 1px solid;
+    padding: 15px 15px;
+    font-size: 15px;
+  }
+  .note {
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    z-index: 9;
+    position: absolute;
+    display: none;
+  }
+  .text-name {
+    top: 0%;
+    left: 25%;
+    right: 5%;
+    bottom: 5%;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .text-loichuc {
+    top: 12%;
+    left: 35%;
+    right: 5%;
+    bottom: 5%;
+    font-size: 15px;
+  }
+  
+  .text-1, .text-2, .text-3, .text-4, .text-5, .text-6{
+    left: 32%;
+    right: 5%;
+    bottom: 5%;
+    position: absolute;
+    word-break: break-word;
+    font-size: 10px;
+    font-family: Arial, Helvetica, system-ui;
+  }
+  .text-1{
+    opacity: 0;
+    top: 19%;
+    animation-delay: 3s;
+    animation: showtext 1s linear forwards;
+  }
+  .text-2{
+    opacity: 0;
+    top: 27%;
+    animation-delay: 6s;
+    animation: showtext 2s linear forwards;
+  }
+  .text-3{
+    opacity: 0;
+    top: 35%;
+    animation-delay: 9s;
+    animation: showtext 3s linear forwards;
+  }
+  .text-4{
+    opacity: 0;
+    top: 43%;
+    animation-delay: 12s;
+    animation: showtext 4s linear forwards;
+  }
+  .text-5{
+    opacity: 0;
+    top: 52%;
+    animation-delay: 15s;
+    animation: showtext 5s linear forwards;
+  }
+  .text-6{
+    opacity: 0;
+    top: 61%;
+    animation-delay: 18s;
+    animation: showtext 6s linear forwards;
+  }
+  @keyframes showtext {
+    0% {  
+        font-size: 5px;
+        opacity: 0;
+    }
+    100% {  
+        font-size: 9px;
+        opacity: 1;
+    }
+  }
+  .gifanh{
+    width: 50px;
+    height: 50px;
+  }
+  .STARDUST2 {
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    animation: move 20s forwards infinite; 
+  }
+  /* button move*/
+  @keyframes move {
+    0%    { opacity: 1; left: 0; top: 10%; display: block;}
+  
+    20%   { opacity: 1; left: 0%; top: 80%; display: block;}
+  
+    40%   { opacity: 1; left: 20%; top: 80%; display: block;}
+  
+    60%   { opacity: 1; left: 20%; top: 5%; display: block;}
+  
+    100%  { opacity: 1; left: 0%; top: 5%; display: block;}
+  
+  }
+}

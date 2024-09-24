@@ -56,13 +56,23 @@ function getRandomIntInclusive(min, max) {
     const maxFloored = Math.floor(max);
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 }
+const  w_change_width = document.querySelector('.bg-form');
+window.onload = function(){
+  w_change_width.offsetWidth = w_change_width.clientWidth;
+}
+console.log(w_change_width.offsetWidth);
 //click button
 const btnClick = document.querySelector('.btn-click');
 const avt_box = document.querySelector('.avt-box');
 const note = document.querySelector('.note');
 btnClick.addEventListener('click', function () {
-  avt_box.style.left = '60%';
-  btnClick.style.left = '70%';
+  l_change_width = w_change_width.offsetWidth;
   note.style.display = "block";
   btnClick.style.display = "none";
+  if(l_change_width <= 414){
+    avt_box.style.top = '55%';
+  }
+  else{
+    avt_box.style.left = '60%';
+  }
 });
